@@ -1,0 +1,317 @@
+body {
+    margin: 0%;
+}
+
+.header1 {
+    height: 26vh;
+    width: 100%;
+}
+
+#bgimg {
+    height: 20vh;
+    
+    background-image: url(https://s3-eu-west-1.amazonaws.com/blog-ecotree/blog/0001/03/bb9330c8621bd240760424b392186cd9713ca5be.jpg);
+    background-size: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    width: 25%;
+    padding: 10px;
+
+    display: inline;
+   
+    color: white;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 33pt;
+    font-family:cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    align-items: center;
+
+    height: 6vh;
+    margin: 0%;
+    padding:0px;
+
+    background-color: rgba(0, 0, 0, 0.849);
+    
+    color: white;
+    font-size: 15pt;   
+}
+
+.listitem {
+    
+   border: solid lightgrey 2px;
+   height: 100%;
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav2{
+    overflow: hidden;
+   
+
+    height: 6vh;
+
+    display: none; /*de ska va flex här*/
+    justify-content: left;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.849);
+   
+}
+
+#menubtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 2%;
+    margin-top: 0.5vh;
+    padding: 1px;
+    gap: 6px;
+    cursor: pointer;
+    
+    width: 90px;
+    height: 30px;
+    
+    border: black solid 2px;
+    border-radius: 5px;
+
+    background-color: lightgray;
+
+}
+
+#menuicon {
+    height: 18px;
+    width: 25px;
+
+    margin-bottom: 5px;
+
+    
+}
+
+.line {
+    width: 25px;
+    height: 4px;
+    background-color: black ;
+    margin: 3px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+
+    height:200vh;
+}
+
+
+
+
+
+
+
+
+#flow {
+    height: 200vh;
+    margin: 5vh 25% 40vh 25%;
+    padding: 2%;
+
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 5px #666565;
+
+    background-color: #282828;
+   
+}
+
+
+#latestpost {
+   margin-left: 3vh;
+   
+    
+}
+
+#h31 {
+    margin: 0%;
+    width: 93.5%;
+    padding: 4px;
+    font-family:cursive;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffdacf;
+    
+
+    border-radius: 5px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.post {
+    height: 40vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 2vh;
+   
+
+    box-shadow: 1px 1px 5px #666565;
+    border-radius: 5px;  
+
+    background-color: white;
+}
+
+#posttitle{
+    height: 8vh;
+    width: 100%;
+
+    
+    font-size: 28pt;
+
+    padding-top: 2vh;
+
+    position: relative; left: 8px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 850px) 
+ {
+
+  #title {
+    
+        padding: 0px;
+        font-size: 21pt;
+    }
+
+    .nav2{
+        display: block;
+    }
+
+    #nav {
+        position: absolute; 
+        left: -300%;
+        top: 26vh;
+        gap: 0;
+
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.849) ;
+
+        width: 23%; 
+        transition: 0.3s;
+    }
+
+    .listitem {
+        margin:  0; 
+        background-color: rgb(31, 29, 29) ;
+        color:white;
+        padding: 5px;
+        border: lightgray solid 2px;
+    }
+
+    #nav.active {
+        left: 0;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 530px) {
+
+    #title {
+        font-size: 18pt;
+    }
+}
+    
