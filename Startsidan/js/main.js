@@ -5,3 +5,4 @@ document.querySelector("#menubtn").addEventListener("click", () => {
     nav2.classList.toggle("active");
     nav.classList.toggle("active");
 })
+
